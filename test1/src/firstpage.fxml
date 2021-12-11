@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane style="-fx-background-color: #453471;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.firstpageController">
+	<children>
+		<AnchorPane prefHeight="386.0" prefWidth="520.0">
+			<children>
+				<Button fx:id="teacherbutton" layoutX="318.0" layoutY="127.0" mnemonicParsing="false" onAction="#gototeacher" prefHeight="147.0" prefWidth="151.0" style="-fx-background-radius: 100;" stylesheets="@../sample.css" />
+				<ImageView fx:id="teacherlogo" fitHeight="107.0" fitWidth="117.0" layoutX="342.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../images/teacher_PNG78.png" />
+					</image>
+					<effect>
+						<Glow />
+					</effect>
+				</ImageView>
+				<Button fx:id="studentbutton" layoutX="69.0" layoutY="127.0" mnemonicParsing="false" onAction="#gotostudent" prefHeight="147.0" prefWidth="151.0" style="-fx-background-radius: 100;" stylesheets="@../sample.css" />
+				<ImageView fx:id="studentlogo" fitHeight="113.0" fitWidth="113.0" layoutX="88.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+					<effect>
+						<Glow />
+					</effect>
+					<image>
+						<Image url="@../images/—Pngtree—student%20glyph%20black%20icon_4008235.png" />
+					</image>
+				</ImageView>
+				<Line endX="25.0" endY="215.0" layoutX="245.0" layoutY="85.0" startX="25.0" startY="-0.20001220703125" stroke="#7a54d4" strokeWidth="5.0" />
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

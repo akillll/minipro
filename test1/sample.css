@@ -1,0 +1,14 @@
+.backgroundColor{
+	-fx-background-color: #453471;
+}
+.buttoncolor{
+	-fx-background-color: #E839F6;
+}
+
+
+.button:hover{
+	-fx-background-color: #7A54D4;
+}
+.studentbutton{
+	-fx-border-radius: 50%;
+}
