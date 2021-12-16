@@ -27,6 +27,9 @@ public class mainController {
 
     @FXML
     private TextField textinput;
+    
+    @FXML
+    private Button Loginbutton;
 
     @FXML
     void gotoselecctionpage(ActionEvent event) {
@@ -47,6 +50,7 @@ public class mainController {
     	System.out.println(passinput.getText());
     	Maincontrolsql.writeToDatabase(textinput.getText(),passinput.getText());
     }
+    
 
 }
 

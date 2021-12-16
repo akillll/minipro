@@ -50,7 +50,7 @@
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>
-            <TextField layoutX="390.0" layoutY="-2.0" prefHeight="42.0" prefWidth="150.0" promptText="Enter Employee ID" />
+            <TextField fx:id="getemployeeid" layoutX="390.0" layoutY="-2.0" prefHeight="42.0" prefWidth="150.0" promptText="Enter Employee ID" />
             <Button fx:id="deleteteacher" layoutX="541.0" mnemonicParsing="false" onAction="#deleteteach" prefHeight="40.0" prefWidth="123.0" styleClass="backgroundColor" stylesheets="@../sample.css" text="Delete" textFill="#d7d9dd">
                <font>
                   <Font name="System Bold" size="14.0" />

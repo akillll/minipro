@@ -1,82 +1,137 @@
 package application;
 
+
 public class tablestudent {
 	
-	private String tablestudadmission;
-	private String tablestudbranch;
-	private String tablestudcontact;
-	private String tablestuddob;
-	private String tablestudemail;
-	private String tablestudname;
-	private String tablestudroll;
-	private String tablestudsem;
+
 	
-	public String getTablestudadmission() {
-		return tablestudadmission;
+	private String admission_no;
+	private String branch;
+	private String phone_no;
+	private String dob;
+	private String email;
+	private String name;
+	private String roll_no;
+	private String semester;
+	
+	
+
+	
+
+
+
+	public String getSemester() {
+		return semester;
 	}
 
-	public void setTablestudadmission(String tablestudadmission) {
-		this.tablestudadmission = tablestudadmission;
+
+
+	public void setSemester(String semester) {
+		this.semester = semester;
 	}
 
-	public String getTablestudbranch() {
-		return tablestudbranch;
+
+
+	public String getRoll_no() {
+		return roll_no;
 	}
 
-	public void setTablestudbranch(String tablestudbranch) {
-		this.tablestudbranch = tablestudbranch;
+
+
+	public void setRoll_no(String roll_no) {
+		this.roll_no = roll_no;
 	}
 
-	public String getTablestudcontact() {
-		return tablestudcontact;
+
+
+	public String getName() {
+		return name;
 	}
 
-	public void setTablestudcontact(String tablestudcontact) {
-		this.tablestudcontact = tablestudcontact;
+
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getTablestuddob() {
-		return tablestuddob;
+
+
+	public String getEmail() {
+		return email;
 	}
 
-	public void setTablestuddob(String tablestuddob) {
-		this.tablestuddob = tablestuddob;
+
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
-	public String getTablestudemail() {
-		return tablestudemail;
+
+
+	public String getDob() {
+		return dob;
 	}
 
-	public void setTablestudemail(String tablestudemail) {
-		this.tablestudemail = tablestudemail;
+
+
+	public void setDob(String dob) {
+		this.dob = dob;
 	}
 
-	public String getTablestudname() {
-		return tablestudname;
+
+
+	public String getPhone_no() {
+		return phone_no;
 	}
 
-	public void setTablestudname(String tablestudname) {
-		this.tablestudname = tablestudname;
+
+
+	public void setPhone_no(String phone_no) {
+		this.phone_no = phone_no;
 	}
 
-	public String getTablestudroll() {
-		return tablestudroll;
+
+
+	public String getBranch() {
+		return branch;
 	}
 
-	public void setTablestudroll(String tablestudroll) {
-		this.tablestudroll = tablestudroll;
+
+
+	public void setBranch(String branch) {
+		this.branch = branch;
 	}
 
-	public String getTablestudsem() {
-		return tablestudsem;
+
+
+	public String getAdmission_no() {
+		return admission_no;
 	}
 
-	public void setTablestudsem(String tablestudsem) {
-		this.tablestudsem = tablestudsem;
+
+
+	public void setAdmission_no(String admission_no) {
+		this.admission_no = admission_no;
+	}
+	
+	public tablestudent(String admission_no, String branch, String phone_no, String dob, String email, String name,
+			String roll_no, String semester) {
+		super();
+		this.setAdmission_no(admission_no);
+		this.setBranch(branch);
+		this.setPhone_no(phone_no);
+		this.setDob(dob);
+		this.setEmail(email);
+		this.setName(name);
+		this.setRoll_no(roll_no);
+		this.setSemester(semester);
 	}
 
-	public tablestudent(String tablestudadmission, String tablestudbranch, String tablestudcontact, String tablestuddob,
-			String tablestudemail, String tablestudname, String tablestudroll, String tablestudsem) {
+
+
+	/*public tablestudent(String tablestudadmission,String tablestudname, String tablestudroll, 
+			 String tablestudcontact,String tablestudemail, String tablestuddob,String tablestudbranch,
+			 String tablestudsem) {
 		super();
 		this.tablestudadmission = tablestudadmission;
 		this.tablestudbranch = tablestudbranch;
@@ -86,6 +141,6 @@ public class tablestudent {
 		this.tablestudname = tablestudname;
 		this.tablestudroll = tablestudroll;
 		this.tablestudsem = tablestudsem;
-	}
+	}*/
 
 }

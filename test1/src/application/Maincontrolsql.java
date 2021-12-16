@@ -4,10 +4,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.EventObject;
 
-
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
 
 
 
@@ -27,21 +31,21 @@ public class Maincontrolsql  {
 		String pass = passinput;
 		Alert a = new Alert(AlertType.NONE);
 		
-		String query = "INSERT into login(username,password) VALUES(?, ?)";
-		
+		/*String query = "INSERT into login(username,password) VALUES(?, ?)";*/
+		/*String sql="Select * from login limit 1";*/
 		try(Connection con = DriverManager.getConnection(DB_URL, USER, PASS);
-				PreparedStatement pst = con.prepareStatement(query))
+				/*PreparedStatement pst = con.prepareStatement(sql)*/)
 		{
 		System.out.println("Connecting to database...");
 		
 		
-		pst.setString(1, name);
+		/*pst.setString(1, name);
 		pst.setString(2, pass);
-		pst.executeUpdate();
-		System.out.println("successfully created");
+		pst.executeUpdate();*/
+		/*System.out.println("successfully created");*/
 		
 		 Statement statement=con.createStatement();
-         String sql="SELECT * FROM login WHERE username = '"+name.toString()+"' AND password = '"+passinput.toString()+"';";
+         String sql= "select * from login where username ='"+name+"' AND password ='"+pass+"'";
          ResultSet resultSet=statement.executeQuery(sql);
 
          
@@ -56,7 +60,8 @@ public class Maincontrolsql  {
          	a.setAlertType(AlertType.ERROR);
          	a.setContentText("incorrect email and password");
              a.show();
-		
+             Event event = null;
+			((Node)(event.getSource())).getScene().getWindow().hide();
 		/*int count=0;
 		while(result.next())
 		{

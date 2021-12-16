@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.layout.AnchorPane;
 
@@ -29,6 +30,9 @@ public class teacherController {
     
     @FXML
     private Button deleteteacher;
+    
+    @FXML
+    private TextField getemployeeid;
 
     @FXML
     void gotoaddteacher(ActionEvent event) {
@@ -85,8 +89,12 @@ try {
     
     @FXML
     void deleteteach(ActionEvent event) {
+    	System.out.println(getemployeeid.getText());
+    	
+    	deleteteachersql.writeToDatabase(getemployeeid.getText());
+    }
     	
     }
 
-    }
+    
 
