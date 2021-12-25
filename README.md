@@ -1,1 +1,3 @@
-# minipro
+# college management system
+## miniproject
+
